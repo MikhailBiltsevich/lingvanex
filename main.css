@@ -1,0 +1,343 @@
+* {
+    font-family: "Inter";
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.service {
+    padding: 24px 16px 16px 16px;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    width: 400px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+}
+
+.service__title {
+    font-size: 34px;
+    font-weight: 900;
+    color: black;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.service__text {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 16px;
+}
+
+@media screen and (max-width: 410px) {
+    .service {
+        width: auto;
+    }
+    
+    .service__image {
+       width: 100%;
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main__section-services {
+    padding: 64px 0px;
+    row-gap: 70px;
+}
+
+@media screen and (max-width: 1279px) {
+    .main__section-services {
+        padding: 32px 25px;
+        row-gap: 35px;
+    }
+}
+
+.main__section-consumers {
+    padding: 70px 0px 0px 0px;
+    row-gap: 64px;
+}
+
+@media screen and (max-width: 1279px) {
+    .main__section-consumers {
+        padding: 35px 25px 0px 25px;
+        row-gap: 32px;
+    }
+}
+
+.main__section-features {
+    padding: 64px 0px 70px 0px;
+    row-gap: 70px;
+}
+
+@media screen and (max-width: 1279px) {
+    .main__section-features {
+        padding: 32px 24px 35px 24px;
+        row-gap: 35px;
+    }
+}
+
+.section-content {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1279px) {
+    .section-content {
+        row-gap: 32px;
+    }
+}
+
+.section_bgcolor_selago {
+    background-color: #F4F6FD;
+}
+
+
+.section__services-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    row-gap: 24px;
+    max-width: 681px;
+}
+
+.section__consumers-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    row-gap: 32px;
+    max-width: 1240px;
+}
+
+.section__consumers-content {
+    row-gap: 32px;
+}
+
+.section__features-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    row-gap: 24px;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section__features-content {
+    padding: 0px 160px;
+}
+
+@media screen and (max-width: 1279px) {
+    .section__features-content {
+        padding: 0px 40px;
+    }    
+}
+
+.section__title {
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+.section__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(42, 43, 47, 0.9);
+}
+
+.button {
+    padding: 20px 94px;
+    background-color: #0146FE;
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.tabs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.tabs-container__tab {
+    cursor: pointer;
+    color: black;
+    background-color: #F4F6FD;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;    
+}
+
+@media screen and (max-width: 1279px) {
+    .tabs-container {
+        flex-direction: column;
+    }
+}
+
+
+.tabs-container__tab_active {
+    color: white;
+    background-color: #0146FE;
+}
+
+.stack {
+    position: relative;
+    padding-bottom: 56px;
+}
+
+.consumer-card {
+    background-color: white;
+    padding: 42px;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    width: auto;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 29px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.consumer-card:nth-child(2) {
+    position: absolute;
+    z-index: -1;
+    background-color: #FEFDFD;
+    transform: scale(0.95);
+    bottom: 29px;
+}
+
+.consumer-card:nth-child(3) {
+    position: absolute;
+    z-index: -2;
+    background-color: #FEFDFD;
+    transform: scale(0.9);
+    bottom: 0px;
+}
+
+@media screen and (max-width: 1279px) {
+    .consumer-card:nth-child(2) {
+        display: none;
+    }
+
+    .consumer-card:nth-child(3) {
+        display: none;
+    }
+}
+
+.consumer-card__title {
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+    margin: 0;
+}
+
+.consumer-card__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 440px;
+}
+
+.consumer-card__image {
+    border-radius: 32px;
+}
+
+.consumer-card__list {
+    padding-left: 20px;
+    color: rgba(42, 43, 47, 0.9);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1279px) {
+    .consumer-card__text-content {
+        flex-basis: auto;
+    }
+
+    .consumer-card__title {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .consumer-card__image {
+       width: 100%;
+    }
+}
+
+.features-container {
+    display: flex;
+    row-gap: 56px;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    justify-content: center;
+}
+
+.feature {
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feature__image {}
+
+.feature__image_rotated_45 {
+    transform: rotate(45deg);
+}
+
+.feature__image_rotated_180 {
+    transform: rotate(180deg);
+}
+
+.feature__title {
+    font-size: 34px;
+    font-weight: 900;
+    color: black;
+    margin: 0;
+    text-align: center;
+}
+
+.feature__text {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #7A869C;
+}
